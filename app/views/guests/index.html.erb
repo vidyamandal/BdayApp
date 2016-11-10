@@ -1,0 +1,21 @@
+<h1>Listing all guests</h1>
+
+<table>
+	<tr>
+		<th>Guest Name</th>
+		<th>Email</th>
+		<th>Is guest attending the party</th>
+		<th>Number of Adults</th>
+		<th>Number of kids</th>
+	</tr>
+	
+	<% @guests.each do |guest| %>
+		<tr>
+			<td><%= guest.name %></td>
+			<td><%= guest.email %></td>
+			<td><%= guest.attend %></td>
+			<td><%= guest.adult %></td>
+			<td><%= guest.child %></td>
+		</tr>
+	<% end %>
+</table>
