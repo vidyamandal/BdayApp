@@ -1,40 +1,63 @@
+
+<div class="topsquare">
+	<h1> Aanaya's First Birthday Party </h1>
+	<h2> 
+		<ul>
+			<li>3rd December 2016</li> 
+			<li>5:00pm</li>
+			<li>6020 Yucca Lane N, Plymouth 55446</li>
+		</ul>
+	</h2>
+</div>
+
+<div class="birthday">
 <%= form_for :guest, url: guests_path do |f| %>
-	<h1> BDay App</h1>
+	
+<% if @guest.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@guest.errors.count, "error") %> prohibited
+        this guest from being saved:
+      </h2>
+      <ul>
+        <% @guest.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
+	
+		<!-- <%= f.label :name %> -->
+		<%= f.text_field :name, placeholder: "Name" %>
 	<br><br>
 	
-	<p>
-		<%= f.label :name %><br>
-		<%= f.text_field :name %>
-	</p>
 	
-	<p>
-		<%= f.label :email %><br>
-		<%= f.text_field :email%>
-	</p><br>
+		<!-- <%= f.label :email %>  -->
+		<%= f.text_field :email, placeholder: "Email" %>
+	<br><br>
 	
-	<p>
+	
 		<%= f.radio_button(:attend, "yes") %>
-		<%= f.label(:attend_yes, "I will attend") %>
+		<%= f.label(:attend_yes, "I will attend!!!") %>
 		<br>
 		<%= f.radio_button(:attend, "no") %>
 		<%= f.label(:attend_no, "Raincheck???") %>
-		<br>
-	</p>
-	<br>
+		
+	<br><br>
 	
-	<p>
-		<%= f.label :adult, "No of Adults - " %>
-		<%= f.number_field :adult %> <br>
-		<%= f.label :child, "No of kids - " %>
-		<%= f.range_field :child %><br>
-	</p>
-	<br>
+	
+
+		<!-- <%= f.label :adult, "No of Adults - " %>  -->
+		<%= f.number_field :adult, placeholder: "No of Adults (Please include yourself)" %> <br><br>
+		<!-- <%= f.label :child, "No of kids - " %>  -->
+		<%= f.number_field :child, placeholder: "No of Kids" %><br>
+
 	<br>
 		
-	<p>
 		<%= f.submit %>
-	</p>
+	<br><br>
 	
 <% end %>
-<%= link_to 'List all guests', guests_path %>		
-		
+
+<!-- <%= link_to 'List all guests', guests_path %>	-->	
+</div>

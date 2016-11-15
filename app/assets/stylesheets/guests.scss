@@ -1,3 +1,118 @@
 // Place all the styles related to the guests controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Helvetica;
+	color: orange;
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2{
+	font-size: 20px;
+	color: orange;
+	text-align: center;
+}
+
+h3{
+	font-size: 15px;
+	color: orange;
+	text-align: center;
+}
+
+.topsquare{
+	height: auto;
+	width: auto;
+	background-color: rgba(0,0,0,0.8);
+	padding: 15px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+
+.topsquare ul li{
+	display: inline;
+	padding: 15px;
+}
+
+
+.birthday{
+	height: auto;
+	width: 320px;
+	background-color: rgba(0,0,0,0.8);
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+
+	margin: auto;
+	margin-top: 40px;
+	
+}
+
+.birthday input[type = "text"]{
+	width: 300px;
+	height: 15px;
+	
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.birthday input[type = "number"]{
+	width: 300px;
+	height: 15px;
+	
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.birthday input[type = "submit"]{
+	width: 150px;
+	height: 30px;
+	
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	background-color: orange;
+	font-weight: bolder;
+}
+
+body{
+	background-image: url(fall6.jpg);
+	background-size: cover;  
+	color: white;
+}
+
+
+.mapdiv{
+	height: 400px;
+	width: 500px;
+	background-color: rgba(0,0,0,0.8);
+	padding: 15px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.mapdiv iframe{
+	height: 350px;
+	width: 492px;
+}
