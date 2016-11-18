@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161105183530) do
+ActiveRecord::Schema.define(version: 20161116161652) do
 
   create_table "guests", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.boolean  "attend"
+    t.string   "attend"
     t.integer  "adult"
     t.integer  "child"
     t.datetime "created_at", null: false
